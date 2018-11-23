@@ -1,0 +1,16 @@
+html{
+    background-color: #90A6AE;
+}
+h1,h2{
+    color: white;
+}
+ol li{
+    color: whitesmoke;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: italic;
+}
+ul li{
+    color:  palegoldenrod;
+    font-size: 13px;
+}
