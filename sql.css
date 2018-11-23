@@ -8,9 +8,10 @@ ol li{
     color: black;
     font-size: 17px;
     line-height: 1.5;
-    font-weight: italic;
+    
 }
 ul li{
-    color:  palegoldenrod;
-    font-size: 13px;
+    color:  gray;
+    font-size: 14px;
+    font-weight: italic;
 }
