@@ -1,11 +1,11 @@
 html{
-    background-color: #90A6AE;
+    background-color: #white;
 }
 h1,h2{
     color: white;
 }
 ol li{
-    color: whitesmoke;
+    color: black;
     font-size: 17px;
     line-height: 1.5;
     font-weight: italic;
