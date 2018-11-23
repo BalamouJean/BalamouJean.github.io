@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>One Vision SQL</title>  
+        <h1>Oracle SQL Tutorial  <br /> </h1> 
+        <link rel="stylesheet" type="text/css" href="sql.css">
+    </head>   
+    <body>
+        <h2><u>Exercices et solutions</u></h2> 
+        
+        <ol>
+            <li> Ecrivez une requête en SQL pour afficher le nom complet (prénom et nom) et le salaire
+                des employés dont le salaire est inférieur à 6000 <br />
+                <ul type="square"><li><b><code>select first_name || ' ' || last_name,salary from employees where salary &#60; 6000 </code></b></li></ul></li>
+            <li>Ecrivez une requête en SQL pour afficher le prénom et le nom, le numéro de
+                département et le salaire des employés dont le salaire est supérieur à 8 000 <br />
+                <ul type="square"><li><b><code>select first_name, last_name,department_id,salary from employees where salary > 8000;</code></b></li></ul></li>
+            <li> Ecrivez une requête en SQL pour afficher le nom, le prénom et le numéro de
+                département de tous les employés dont le nom est "McEwen"<br />
+               <ul type="square"><li> <b><code>select first_name, last_name,department_id,salary from employees where last_name = 'McEwen';</code></b></li></ul></li>
+            
+            <li> Ecrivez une requête en SQL pour afficher toutes les informations sur le département Marketing<br />
+                <ul type="square"><li><b><code>select * from departments where department_name='Marketing';</code></b></li></ul></li>
+            
+            <li> Ecrivez une requête en SQL pour afficher le nom complet (prénom et nom), la date
+                d'embauche, le salaire et le numéro de département des employés dont<br/> le prénom ne
+                contient pas la lettre M, puis définissez le résultat par ordre croissant de numéro de
+                département.<br />
+                <ul type="square"><li><b><code>select first_name, last_name,hire_date,department_id,salary from employees where first_name not like '%M%' order by department_id;</code></b></li></ul></li>
+            
+            <li> Ecrivez une requête en SQL pour afficher toutes les informations des employés dont le
+                salaire est compris entre 8 000 et 12 000 et dont la <br/>commission n’est pas nulle ou le
+                numéro de département est différent des numéros 40, 120 et 70 et qui ont été
+                embauchés avant le 5 juin. 1987.<br />
+                <ul type="square"><li><b><code>select * from employees where (salary between 8000 and 12000 and commission_pct is not null ) or (department_id not in (40,120,70) and hire_date &#60; '6/15/1987');</code></b></li></ul></li>
+            
+            <li> Ecrivez une requête en SQL pour afficher le nom complet (prénom et nom) et le salaire
+                de tous les employés qui ne gagnent aucune commission.<br />
+                <ul type="square"><li><b><code>select first_name,last_name,salary from employees where  commission_pct is not null ;</code></b></li></ul></li>
+            
+            
+        </ol>
+        
+    </body>
+    <foot>
+        
+    </foot>
+</html>
